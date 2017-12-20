@@ -1,8 +1,9 @@
-<button (click)="signInWithFacebook()">Facebook login</button>
-<button (click)="signInWithGoogle()">Google login</button>
+<!-- <ng-container *ngIf="!user">
+  <button  (click)="signInWithFacebook()">Facebook login</button>
+  <button (click)="signInWithGoogle()">Google login</button>
+</ng-container>
 
-
-<button (click)="logout()">Logout()</button>
+<button *ngIf="user" (click)="logout()">Logout()</button>
 
 <div class="userInfo" *ngIf="user">
   <img src="{{ user.photoUrl }}">
@@ -13,5 +14,14 @@
 </div>
 <div *ngIf="!user">
   chua dang nhap
+</div> -->
+
+
+<div class="project2t">
+  <header></header>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- <footer></footer> -->
 </div>
 

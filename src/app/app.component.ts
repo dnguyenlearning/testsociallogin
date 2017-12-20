@@ -34,11 +34,19 @@ export class AppComponent implements OnInit{
   }
 
   signInWithGoogle():void{
-    this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
+    this.authService.signIn(GoogleLoginProvider.PROVIDER_ID)
+    .then((data)=>{
+      //call api
+    })
+    .catch(err=>{
+      console.log(err);
+    })
   }
 
   signInWithFacebook():void{
-    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);    
+    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID).catch(err=>{
+      console.log(err);
+    });;    
   }
 
   logout(): void {

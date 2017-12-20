@@ -1,0 +1,14 @@
+<div id="create-product">
+  <h3>Create A Product</h3>
+  <p *ngIf="error">{{error}}</p>
+  <form (ngSubmit)="createProduct()">
+    <mat-form-field>
+      <input matInput [(ngModel)]="dataForm.name" name="name" type="text" placeholder="Name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" [(ngModel)]="dataForm.price" name="price" placeholder="Price">
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary">Create</button>
+  </form>
+
+</div>

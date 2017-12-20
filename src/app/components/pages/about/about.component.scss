@@ -1,0 +1,31 @@
+@import '~styles.scss';
+
+#about{
+    padding: 20px;
+    .left{
+        *{
+            margin:20px;
+        }
+    }
+    .right{
+        span{
+            margin-left: 20px;
+        }
+    }
+}
+#welcome{
+    height: 500px;
+    color: white;
+    background: url('http://m.img.brothersoft.com/android/b6/b6403be0962d94255c71a1a92ba21dd0_screeshots_2.png') center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.separateLayout{
+    .item{
+        background: cyan;
+        color: black;
+        font-weight: 700;
+        border-right: 1px solid black;
+        padding: 20px;
+    }
+}

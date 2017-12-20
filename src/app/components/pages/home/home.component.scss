@@ -1,0 +1,21 @@
+#home{
+    min-height: auto;
+    width: 100%;
+    padding:30px;
+    .post{
+        background-color: gray;
+        padding: 30px;
+        
+    }
+    mat-card{
+        width: 25%;
+        margin: 30px;
+    }
+
+}
+
+.createProduct{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}

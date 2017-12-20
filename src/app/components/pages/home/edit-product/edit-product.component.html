@@ -1,0 +1,15 @@
+<div id="edit-product">
+  <h3>Edit A Product</h3>
+  <p *ngIf="error">{{error}}</p>
+  <form (ngSubmit)="saveProduct()">
+    <mat-form-field>
+      <input matInput [(ngModel)]="dataForm.name" name="name" type="text" placeholder="Name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" [(ngModel)]="dataForm.price" name="price" placeholder="Price">
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary">Save</button>
+    <button type="button" mat-raised-button (click)="onClose()" >Cancel</button>
+  </form>
+
+</div>
